@@ -1,0 +1,52 @@
+[
+    {
+        "name": "Car",
+        "maxSpeed": 150,
+        "unit": "Km/h"
+    },
+    {
+        "name": "Motorcycle",
+        "maxSpeed": 200,
+        "unit": "Km/h"
+    },
+    {
+        "name": "Bus",
+        "maxSpeed": 100,
+        "unit": "Km/h"
+    },
+    {
+        "name": "Bicycle",
+        "maxSpeed": 30,
+        "unit": "Km/h"
+    },
+    {
+        "name": "Jet Ski",
+        "maxSpeed": 50,
+        "unit": "knots"
+    },
+    {
+        "name": "Speed Boat",
+        "maxSpeed": 70,
+        "unit": "knots"
+    },
+    {
+        "name": "Yacht",
+        "maxSpeed": 20,
+        "unit": "knots"
+    },
+    {
+        "name": "Helicopter",
+        "maxSpeed": 140,
+        "unit": "Kts"
+    },
+    {
+        "name": "Airplane",
+        "maxSpeed": 485,
+        "unit": "Kts"
+    },
+    {
+        "name": "Hot Air Balloon",
+        "maxSpeed": 5,
+        "unit": "Kts"
+    }
+]
