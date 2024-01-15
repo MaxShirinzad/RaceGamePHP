@@ -22,7 +22,20 @@ class Race
 
     private function calculateTime(Vehicle $vehicle): int
     {
-        return round(($this->raceDistance / $vehicle->getMaxSpeed()) * 3600);
+        $maxSpeed = $vehicle->getMaxSpeed();
+
+        // Convert speed to km/h if it's in knots (kts)
+        if ($vehicle->getUnit() == "Kts" or $vehicle->getUnit() == "knots") {
+            $maxSpeed *= 1.852; // 1 knot = 1.852 km/h
+
+            //print_r($vehicle->getName() . "\n" . $vehicle->getUnit() . "\n" . 'maxSpeed' . $maxSpeed); // For debugging
+        }
+
+        // Calculate time in seconds
+        $time = ($this->raceDistance / $maxSpeed) * 3600;
+        return round($time);
+
+        //return round(($this->raceDistance / $vehicle->getMaxSpeed()) * 3600);
 
     }
 
