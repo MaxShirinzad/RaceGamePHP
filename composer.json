@@ -1,0 +1,9 @@
+{
+    "type": "project",
+    "description": "The Race Game in PHP.",
+    "keywords": ["RaceGamePHP", "PHP"],
+    "license": "MIT",
+    "require": {
+        "php": "^8.1"
+    }
+}
