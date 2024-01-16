@@ -1,10 +1,17 @@
 {
-    "type": "project",
-    "description": "The Race Game in PHP.",
-    "keywords": ["RaceGamePHP", "PHP"],
-    "license": "MIT",
-    "require": {
-        "php": "^8.1",
-        "ext-readline": "*"
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
     }
+  },
+  "authors": [
+    {
+      "name": "Max Shirinzad",
+      "email": "max.shirinzad@gmail.com"
+    }
+  ],
+  "require": {
+      "php": "^8.1",
+      "ext-readline": "*"
+  }
 }
