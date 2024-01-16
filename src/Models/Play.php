@@ -2,7 +2,6 @@
 
 namespace App\Models;
 
-// Include the necessary classes
 require_once 'src/Vehicle.php';
 require_once 'src/Race.php';
 
@@ -11,6 +10,16 @@ use Vehicle;
 
 class Play
 {
+    private static ?Play $instance = null;
+
+    public static function getInstance(): Play
+    {
+        if (self::$instance === null) {
+            self::$instance = new self();
+        }
+
+        return self::$instance;
+    }
 
 // Prompt players to choose vehicles
     function promptPlayerToChooseVehicle(string $playerNumber, array $vehicles): Vehicle

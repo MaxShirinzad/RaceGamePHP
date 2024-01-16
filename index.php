@@ -4,5 +4,6 @@ require 'vendor/autoload.php';
 
 use App\Models\Play;
 
-(new Play())->play();
+$singleton = Play::getInstance();
+$singleton->play();
 
